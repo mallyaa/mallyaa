@@ -12,9 +12,9 @@
 
 **Engineering background · Moving into Tech Product Management**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-ankitmallya-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ankitmallya)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ankitmallya-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mallyaa)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live%20site-8b949e?style=for-the-badge)](https://ankitmallya.github.io)
-[![Email](https://img.shields.io/badge/Email-Reach%20out-8b949e?style=for-the-badge&logo=minutemailer)](mailto:your.email@example.com)
+[![Email](https://img.shields.io/badge/Email-Reach%20out-8b949e?style=for-the-badge&logo=minutemailer)](mailto:ankit.mallya@gmail.com)
 
 ---
 
@@ -22,21 +22,27 @@
 
 ## About me
 
-- **Where I'm headed:** Tech Product Manager — owning the *what* and *why*, not just the *how*.
-- **What I bring:** Technical depth (engineering/analytics) + product thinking (problem framing, prioritization, impact).
-- **What I care about:** Clear problem statements, measurable outcomes, and cross-functional alignment.
+- **Where I'm headed:** Tech Product Manager — driving problem discovery, strategy, and execution, not just delivery.
+- **What I bring:** Strong engineering foundation across cloud + data platforms, paired with product thinking (customer impact, prioritization, roadmap clarity).
+- **What I care about:** Scalable systems, measurable outcomes, and building alignment across engineering, business, and stakeholders.
+
+## Experience highlights
+
+- Building production-grade data ingestion + transformation pipelines using AWS, Snowflake, and dbt.
+- Driving automation initiatives that improved delivery speed and reduced repetitive operational workload.
+- Exploring AI enablement (LLMs, RAG, intelligent data access) to make enterprise data more usable and decision-ready.
 
 ## GitHub activity
 
 <div align="center">
 
-[![Ankit's GitHub stats](https://github-readme-stats.vercel.app/api?username=ankitmallya&show_icons=true&theme=default&hide_border=true&count_private=true)](https://github.com/ankitmallya)
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ankitmallya&theme=default&hide_border=true)](https://github.com/ankitmallya)
+[![Ankit's GitHub stats](https://github-readme-stats.vercel.app/api?username=mallyaa&show_icons=true&theme=default&hide_border=true&count_private=true)](https://github.com/mallyaa)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=mallyaa&theme=default&hide_border=true)](https://github.com/mallyaa)
 
 </div>
 
 <!-- Optional: Uncomment below and add the Platane snake workflow to .github/workflows/ to show a contribution snake. See https://github.com/Platane/snk -->
-<!--
+
 <div align="center">
   <img src="https://raw.githubusercontent.com/ankitmallya/ankitmallya/output/github-contribution-grid-snake.svg" alt="Contribution snake" />
 </div>
@@ -60,7 +66,7 @@
 ## How to reach me
 
 - **LinkedIn:** [linkedin.com/in/ankitmallya](https://linkedin.com/in/ankitmallya)
-- **Email:** *[Add your email]*
+- **Email:** *ankit.mallya@gmail.com*
 - **Portfolio:** *[Add link when you host it]*
 
 ---
