@@ -44,6 +44,20 @@
 
 <br>
 
+## 🧰 Tools
+
+<div align="center">
+
+*Tools I've used (aligned with my [LinkedIn](https://linkedin.com/in/ankitmallya))*
+
+<br>
+
+<img src="https://skillicons.dev/icons?i=aws,gcp,py,sql,git,docker,figma,jira,postgres" alt="Tools" />
+
+</div>
+
+<br>
+
 ## 📊 GitHub activity
 
 <div align="center">
