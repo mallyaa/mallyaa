@@ -67,6 +67,7 @@
 | Project | Description |
 | :--- | :--- |
 | [**Portfolio**](https://github.com/ankitmallya/portfolio) | Engineer → PM portfolio: problem, approach, impact. |
+| [**Daily Ship**](https://github.com/ankitmallya/ankitmallya/tree/main/daily-log) | Building in public: automated daily commits + live timeline site (streak, Shipped/Learned). |
 | *[Add your next project]* | *One-line description and link.* |
 
 *More projects coming as I ship. Focus: product-led side projects and open-source contributions.*

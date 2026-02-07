@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Ship — Building in public</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Daily Ship</h1>
+    <p class="tagline">One commit per day. Building in public.</p>
+    <div class="stats" id="stats">
+      <span class="stat"><strong id="streak">0</strong> day streak</span>
+      <span class="stat"><strong id="total">0</strong> total days</span>
+    </div>
+    <a href="https://github.com/ankitmallya/ankitmallya/tree/main/daily-log" class="repo-link">View source & log</a>
+  </header>
+
+  <main class="timeline" id="timeline">
+    <p class="loading" id="loading">Loading…</p>
+    <div class="cards" id="cards"></div>
+  </main>
+
+  <footer class="footer">
+    <p>Updated daily by <a href="https://github.com/ankitmallya/ankitmallya/actions">GitHub Actions</a>. Edit entries in the repo to add what you shipped or learned.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
