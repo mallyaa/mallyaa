@@ -11,7 +11,7 @@ permalink: pretty
 
 # No theme — we use _layouts and assets
 
-# Exclude from processing
+# Exclude from processing (README never used for site)
 exclude:
   - Gemfile
   - Gemfile.lock
