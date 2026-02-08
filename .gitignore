@@ -1,4 +1,6 @@
+# Jekyll (build from jekyll-site/)
 _site/
 .jekyll-cache/
+jekyll-site/vendor/
 Gemfile.lock
 *.gem
