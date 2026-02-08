@@ -1,0 +1,272 @@
+/* Portfolio — inoryy.com-inspired layout */
+:root {
+  --bg: #fff;
+  --text: #1a1a1a;
+  --muted: #666;
+  --border: #e0e0e0;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav-logo:hover {
+  color: var(--accent);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--accent);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-toggle {
+    display: block;
+  }
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 0 4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-name {
+  margin: 0 0 0.5rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.hero-title {
+  margin: 0 0 0.25rem;
+  font-size: 1.25rem;
+  color: var(--muted);
+}
+
+.hero-subtitle {
+  margin: 0 0 1.5rem;
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+.hero-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-links a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.hero-links a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+.section h2 {
+  margin: 0 0 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.section h3 {
+  margin: 1.5rem 0 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.section h3:first-child {
+  margin-top: 0;
+}
+
+.section p {
+  margin: 0 0 1rem;
+}
+
+.section ul {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem;
+}
+
+.section li {
+  margin-bottom: 0.5rem;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Post cards */
+.post-card {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-card:last-child {
+  border-bottom: none;
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.post-card h3 {
+  margin: 0.5rem 0 0.75rem;
+  font-size: 1.2rem;
+}
+
+.post-card h3 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.post-card h3 a:hover {
+  color: var(--accent);
+}
+
+.post-link {
+  font-size: 0.9rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.post-link:hover {
+  text-decoration: underline;
+}
+
+/* Project grid */
+.project-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.project-card {
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.project-card h3 a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.project-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.project-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.talk-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.talk-list li {
+  margin-bottom: 0.75rem;
+}
+
+.section a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}

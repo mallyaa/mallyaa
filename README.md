@@ -52,7 +52,7 @@
 
 <br>
 
-<img src="https://skillicons.dev/icons?i=aws,gcp,py,sql,git,docker,figma,jira,postgres" alt="Tools" />
+<img src="https://skillicons.dev/icons?i=aws,gcp,py,git,docker,jira" alt="Tools" />
 
 </div>
 
