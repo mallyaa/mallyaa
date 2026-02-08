@@ -11,36 +11,24 @@ title: Home
         <div class="home-photo-placeholder" aria-hidden="true"><span>AM</span></div>
       </div>
       <div class="home-hero-text">
-        <h1 class="home-name">{{ site.title }}</h1>
-        <p class="home-tagline">Engineering @ BetaNXT</p>
-        <p class="home-sub">Engineering → Product · Building products that ship</p>
+        <p class="home-greeting-line">hello my name is Ankit Mallya<span class="cursor-blink" aria-hidden="true">/</span></p>
+        <p class="summary-line">Engineering → Product | AWS · Snowflake · dbt | Platform + Data Systems</p>
+        <p>
+          I'm a software engineer, investor and traveller based in Bangalore, India. I build and ship data pipelines and platform tooling that teams rely on — with a focus on clarity, reliability, and impact.
+        </p>
+        <p>
+          Currently building DataXchange at <a href="https://betanxt.com/" target="_blank" rel="noopener" class="link-highlight">BetaNXT</a>, a fintech company powering wealth management. We're making data flow for advisors and asset managers faster and more reliable.
+        </p>
       </div>
     </div>
   </div>
 
-  <section class="section section-who animate-on-scroll">
-    <p class="home-greeting"><span class="greeting-rotate" id="greeting" aria-live="polite">Hello</span>, my name is</p>
-    <h2 class="home-intro-line">I build scalable platforms and data systems that ship.</h2>
-    <p class="summary-line">Engineering → Product | AWS · Snowflake · dbt | Platform + Data Systems</p>
-    <p>
-      I'm a software engineer, investor and traveller based in Bangalore, India. I build and ship data pipelines and platform tooling that teams rely on — with a focus on clarity, reliability, and impact.
-    </p>
-    <p>
-      Currently building DataXchange at <a href="https://betanxt.com/" target="_blank" rel="noopener" class="link-highlight">BetaNXT</a>, a fintech company powering wealth management. We're making data flow for advisors and asset managers faster and more reliable.
-    </p>
-    <script>
-      (function() {
-        var greetings = ['Namaste', 'Bonjour', 'Hello', 'Hola', 'Ciao'];
-        var el = document.getElementById('greeting');
-        if (!el) return;
-        var i = 0;
-        setInterval(function() {
-          i = (i + 1) % greetings.length;
-          el.textContent = greetings[i];
-        }, 2200);
-      })();
-    </script>
-  </section>
+  <script>
+    (function() {
+      var c = document.querySelector('.cursor-blink');
+      if (c) setInterval(function() { c.style.opacity = c.style.opacity === '0' ? '1' : '0'; }, 530);
+    })();
+  </script>
 
   <section class="section animate-on-scroll">
     <h2>Now</h2>
