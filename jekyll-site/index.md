@@ -43,13 +43,39 @@ title: Home
   </section>
 
   <section class="section animate-on-scroll">
-    <h2>Currently</h2>
-    <div class="currently-card">
-      <h3>Building DataXchange @ BetaNXT</h3>
-      <ul>
-        <li>Working on ingestion pipelines and Snowflake/dbt transformations</li>
-        <li>Exploring LLM + RAG for enterprise data usability</li>
-      </ul>
+    <h2>Now</h2>
+
+    <div class="dashboard-grid">
+      <div class="dash-card dash-primary">
+        <p class="dash-label">Building</p>
+        <h3 class="dash-title">DataXchange Platform</h3>
+        <p class="dash-sub">
+          Reliable data movement for wealth management workflows.
+        </p>
+        <div class="dash-tags">
+          <span class="tag">Platform</span>
+          <span class="tag">FinTech</span>
+          <span class="tag tag-live">Shipping</span>
+        </div>
+      </div>
+
+      <div class="dash-card">
+        <p class="dash-label">Core Stack</p>
+        <h3 class="dash-title">AWS · Snowflake · dbt</h3>
+        <p class="dash-sub">Pipelines, transformations, automation workflows.</p>
+      </div>
+
+      <div class="dash-card">
+        <p class="dash-label">Focus</p>
+        <h3 class="dash-title">Latency · Reliability · Scale</h3>
+        <p class="dash-sub">Systems that run clean and ship fast.</p>
+      </div>
+
+      <div class="dash-card">
+        <p class="dash-label">Exploring</p>
+        <h3 class="dash-title">LLMs + RAG</h3>
+        <p class="dash-sub">Intelligent enterprise data access & discovery.</p>
+      </div>
     </div>
   </section>
 
