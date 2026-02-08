@@ -10,11 +10,11 @@ title: Experience
 
 ---
 
-## Coforge · Data Engineer  
+## Coforge · Senior Technical Analyst  
 *Aug 2024 – March 2025 · Bangalore*
 
-- **Orchestration & ETL:** Designed Apache Airflow DAGs using `TriggerDagRunOperator` and `ExternalTaskSensor` to sequentially trigger AWS Glue jobs; integrated `S3KeySensor` for data-availability checks. Automated dbt model runs to refresh Snowflake target tables post–Glue completion.
-- **Pipeline stack:** End-to-end workflows with Airflow AWS provider, **boto3** for Glue job lifecycle, and **snowflake-connector** for incremental updates — enabling reliable, observable data pipelines from S3 → transform → warehouse.
+- **Orchestration & ETL:** Built and maintained production-grade workflow orchestration using **Apache Airflow**, coordinating multi-stage ETL pipelines with dependency management, event-based triggers, and data-availability checks. Automated downstream **dbt** transformations to refresh curated **Snowflake** models once upstream processing completed.
+- **Pipeline stack:** Delivered E2E workflows across **AWS** and **Snowflake**, leveraging Python-based integrations (AWS SDK + Snowflake connectors) to support incremental loads, observability, and reliable execution from ingestion → transformation → warehouse.
 
 ---
 
