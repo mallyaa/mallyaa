@@ -4,11 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
+
 <body>
   <nav class="nav" role="navigation">
     <div class="nav-inner">
@@ -27,21 +31,55 @@
   </main>
 
   <footer class="footer">
-    <p><a href="mailto:ankit.mallya@gmail.com">Email</a> · <a href="https://linkedin.com/in/ankitmallya" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/ankitmallya" target="_blank" rel="noopener">GitHub</a></p>
+    <p>
+      <a href="mailto:ankit.mallya@gmail.com">Email</a> ·
+      <a href="https://linkedin.com/in/ankitmallya" target="_blank" rel="noopener">LinkedIn</a> ·
+      <a href="https://github.com/ankitmallya" target="_blank" rel="noopener">GitHub</a>
+    </p>
+
     <p class="footer-copy">© {{ 'now' | date: '%Y' }} {{ site.title }}</p>
     <p class="footer-fun">Outside work: Manchester United, UFC, and the gym.</p>
   </footer>
+
+  <!-- Scroll reveal animation -->
   <script>
-    (function() {
-      var els = document.querySelectorAll('.animate-on-scroll');
-      if (!els.length) return;
-      var io = typeof IntersectionObserver !== 'undefined' ? new IntersectionObserver(function(entries) {
-        entries.forEach(function(e) {
-          if (e.isIntersecting) { e.target.classList.add('is-visible'); }
-        });
-      }, { rootMargin: '0px 0px -8% 0px', threshold: 0 }) : null;
-      if (io) els.forEach(function(el) { io.observe(el); });
-      else els.forEach(function(el) { el.classList.add('is-visible'); });
+    (function () {
+      const elements = document.querySelectorAll(".animate-on-scroll");
+      if (!elements.length) return;
+
+      // Respect accessibility setting
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (prefersReducedMotion) {
+        elements.forEach(el => el.classList.add("is-visible"));
+        return;
+      }
+
+      // Add stagger delays automatically (clean effect)
+      elements.forEach((el, i) => {
+        el.style.transitionDelay = `${i * 80}ms`;
+      });
+
+      if (!("IntersectionObserver" in window)) {
+        elements.forEach(el => el.classList.add("is-visible"));
+        return;
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target); // reveal once
+            }
+          });
+        },
+        {
+          threshold: 0.15,
+          rootMargin: "0px 0px -10% 0px"
+        }
+      );
+
+      elements.forEach(el => observer.observe(el));
     })();
   </script>
 </body>

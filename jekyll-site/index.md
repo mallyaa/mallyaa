@@ -6,6 +6,7 @@ title: Home
 <div class="home">
   <div class="home-hero">
     <div class="home-hero-inner">
+
       <div class="home-photo-wrap">
         <img src="{{ '/assets/img/photo.jpg' | relative_url }}" alt="Ankit Mallya" class="home-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
         <div class="home-photo-placeholder" aria-hidden="true"><span>AM</span></div>
@@ -13,8 +14,10 @@ title: Home
 
       <div class="home-hero-text">
         <p class="home-greeting-line">
-          <span class="greeting-prefix">hello my name is</span>
-          <span class="greeting-name">Ankit</span><span class="cursor-console" aria-hidden="true">/</span>
+          <span class="greeting-prefix">hi,</span>
+          <span class="greeting-name">Ankit</span>
+          <span class="greeting-prefix">here</span>
+          <span class="cursor-console" aria-hidden="true">|</span>
         </p>
 
         <p>
@@ -27,6 +30,7 @@ title: Home
           a fintech company powering wealth management. We make data flow for advisors and asset managers faster and more reliable.
         </p>
       </div>
+
     </div>
   </div>
 
