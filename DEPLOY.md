@@ -29,3 +29,9 @@ bundle exec jekyll serve --baseurl ''
 ```
 
 Open http://localhost:4000
+
+## Site not updating?
+
+1. **Settings → Pages** → Under "Build and deployment", **Source** must be **GitHub Actions**. If it says "Deploy from a branch", the workflow runs but GitHub serves the branch, not the workflow output — switch to **GitHub Actions** and save.
+2. **Actions** tab → Open the latest "Deploy Jekyll site to GitHub Pages" run. Both **build** and **deploy** must be green. If **deploy** is skipped or failed, the site won’t update.
+3. Hard refresh the site (Ctrl+Shift+R or Cmd+Shift+R) or open it in a private window in case of cache.
